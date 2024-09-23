@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="main-field">
+        <p>Generate a</p>
+        <p id="scramble-text" style="color: rgb(2, 139, 81); text-decoration: underline; text-underline-offset: 6px;">
+            Random Password</p>
+        <div id="pf">
+            <input type="text" readonly placeholder="Password" id="password-field" onclick="copyToClipboard()">
+            <p id="success-message"><img src="assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg">Password copied successfully</p>
+        </div>
+        <div id="submit">
+            <input type="number" placeholder="Length" id="password-length" min="8">
+            <button id="button" onclick="generatePassword()"><img
+                    src="assets/refresh_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg">Generate</button>
+        </div>
+    </div>
+
+    <p id="instruction">Refresh: R | Copy: C | Increase Length: ⬆️ | Decrease Length: ⬇️</p>
+</body>
+
+<script src="script.js"></script>
+
+</html>
