@@ -6,13 +6,6 @@ document.addEventListener('keydown', (event) => {
     if (event.key === 'c' || event.key === 'C') {
         copyToClipboard();
     }
-    if (event.key === 'ArrowUp') {
-        document.getElementById('password-length').value = parseInt(document.getElementById('password-length').value) + 1;
-    }
-
-    if (event.key === 'ArrowDown') {
-        document.getElementById('password-length').value = parseInt(document.getElementById('password-length').value) - 1;
-    }
 })
 
 class TextScramble {
